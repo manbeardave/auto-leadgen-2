@@ -1,0 +1,117 @@
+@import "twitter/bootstrap/bootstrap";
+
+// Set the correct sprite paths
+@iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
+@iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: font-url("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: font-url("fontawesome-webfont.eot?#iefix");
+@fontAwesomeWoffPath: font-url("fontawesome-webfont.woff");
+@fontAwesomeTtfPath: font-url("fontawesome-webfont.ttf");
+@fontAwesomeSvgPath: font-url("fontawesome-webfont.svg#fontawesomeregular");
+
+// Font Awesome
+@import "fontawesome/font-awesome";
+
+// Glyphicons
+@import "twitter/bootstrap/glyphicons.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @link-color: #ff0000;
+
+/* latin-ext */
+@font-face {
+  font-family: 'Domine';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Domine'), local('Domine-Regular'), url(http://fonts.gstatic.com/s/domine/v4/kgr-Nrn5wibPqCDOBCHWq3-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0101-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Domine';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Domine'), local('Domine-Regular'), url(http://fonts.gstatic.com/s/domine/v4/FxcR-tD_L-w7iQxsjZvwq3-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Domine';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Domine Bold'), local('Domine-Bold'), url(http://fonts.gstatic.com/s/domine/v4/kxdP69OfpXh5jz-VlR6wIoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Domine';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Domine Bold'), local('Domine-Bold'), url(http://fonts.gstatic.com/s/domine/v4/BmiPqZorq0QiT-p6kf1paYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* rules that were coded into a style tag in the solutions page wat */
+.tk-proxima-nova {
+  font-family: "proxima-nova",sans-serif;
+}
+
+.tk-proxima-nova-condensed {
+  font-family: "proxima-nova-condensed", sans-serif;
+}
+
+.tk-ff-tisa-web-pro {
+  font-family: "ff-tisa-web-pro",serif;
+}
+
+.simple-social-icons ul li a, .simple-social-icons ul li a:hover {
+  border-radius: 0px;
+  color: #ffffff !important;
+  font-size: 24px;
+  padding: 12px;
+}
+
+.simple-social-icons ul li a:hover {
+  color: #f8ca39 !important;
+}
+
+header.site-header {
+  max-height: 100px;
+}
+
+.dark-text {
+  color: #5f6a7d;
+}
+
+.container-1 {
+  width: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow: hidden;
+}
+
+.learnmore {
+  width: 200px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+
+}
+
+.modal-dialog {
+  left: 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US" class="wf-proximanova-n4-active wf-proximanova-n7-active wf-proximanovacondensed-n4-active wf-proximanovacondensed-n6-active js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websocks rgba hsla mulitplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-fftisawebpro-n4-active wf-proximanova-n6-active wf-proximanovacondensed-n7-active wf-active">
+<head>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa7tNOmO-c_FiT-dgG4KpPo4v6HB-TAGc"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title><%= content_for?(:title) ? yield(:title) : "Leadgen" %></title>
+<%= csrf_meta_tags %>
+
+<!-- support for ie6-ie8 html elements -->
+<!-- [if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
+<![endif] -->
+
+<%= stylesheet_link_tag "application", :media => "all" %>
+
+<%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+<%= javascript_include_tag "application" %>
+
+<!-- meta tags from vervemobile dot com -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="http://www.vervemobile.com/wp-content/themes/centric-pro/img/facebookicon.png">
+
+<link rel="Shortcut Icon" href="http://www.vervemobile.com/wp-content/themes/centric-pro/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="page page-id-2898 page-parent page-template-default header-image full-width-content solutions" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+
+
+<div class="container">
+
+  <div class="bumper">
+  </div>
+
+  <%= yield %>
+
+  <footer style="margin-left: 20px;">
+    <p>&copy; Verve Wireless 2014</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
+

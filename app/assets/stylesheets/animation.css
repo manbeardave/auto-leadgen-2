@@ -1,0 +1,62 @@
+/* hope you like this slideshow */
+h2.foot-traffic-caption {
+  color: #fff;
+}
+
+.caption-top {
+  top: 0%;
+  margin-bottom: 0px;
+  /* padding-bottom: 20px; */
+}
+
+.item > .carousel-caption > .carousel-fade-in {
+  -moz-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  opacity: 0;
+}
+
+.item.active > .carousel-caption > .carousel-fade-in {
+  -moz-transition: opacity ease-in-out .3s;
+  -webkit-transition: opacity ease-in-out .3s;
+  -o-transition: opacity ease-in-out .3s;
+  transition: opacity ease-in-out .3s;
+  -moz-transition-delay: .7s;
+  -webkit-transition-delay: .7s;
+  -o-transition-delay: .7s;
+  transition-delay: .7s;
+  opacity: 1;
+}
+
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .item {
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  left: 0 !important;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block !important;
+  z-index:1;
+}
+
+.carousel.fade .item:first-child {
+  top: auto;
+  position: relative;
+}
+
+.carousel.fade .item.active {
+  opacity: 1;
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  z-index: 2;
+}

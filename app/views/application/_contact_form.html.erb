@@ -1,0 +1,79 @@
+<%= form_tag("https://www.salesforce.com/servlet/servlet.WebtoLead?encoding=UTF-8", role: "form", class: "text-box") do %>
+    <% if @modal %>
+        <div class="modal-body">
+    <% end %>
+    <div class="row">
+        <input type=hidden name="oid" value="00D500000006rd2">
+        <input type=hidden name="retURL" value="<%= @redir_url %>">
+
+        <% if @debug_form %>
+            <input type="hidden" name="debug" value=1>
+            <input type="hidden" name="debugEmail" value="skye@vervemobile.com">
+        <% end %>
+
+        <div class="form-group">
+            <label class="control-label" for="first_name">First Name <span class="help-block">(required)</span></label>
+            <%= text_field_tag "first_name", nil, placeholder: "Enter your first name here", class: "form-control", maxlength: 40 %>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="last_name">Last Name <span class="help-block">(required)</span></label>
+            <%= text_field_tag "last_name", nil, placeholder: "Enter your last name here", class: "form-control", maxlength: 80 %>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="email">Email Address <span class="help-block">(required)</span></label>
+            <%= email_field_tag "email", nil, placeholder: "you@company.com", class: "form-control", maxlength: 80 %>
+        </div>
+
+        <div class="form-group">
+            <%= label_tag "company", "Company", class: "control-label" %>
+            <%= text_field_tag "company", nil, placeholder: "Company Name", class: "form-control", maxlength: 40 %>
+        </div>
+
+        <div class="form-group">
+            <%= label_tag "phone", "Phone Number", class: "control-label" %>
+            <%= phone_field_tag "phone", nil, placeholder: "123-456-7890", class: "form-control", maxlength: 40 %>
+        </div>
+
+        <div class="form-group">
+            <% if @use_dropdown %>
+                <%= label_tag "industry", "How would you describe yourself?", class: "control-label" %>
+                <%= select_tag "industry", options_for_select(@industries), {class: "form-control"} %>
+            <% else %>
+                <%= hidden_field_tag 'industry', @industry %>
+            <% end %>
+        </div>
+
+        <div class="form-group">
+            <%= label_tag "city", "City", class: "control-label" %>
+            <%= text_field_tag "city", nil, placeholder: "City", class: "form-control", maxlength: 40 %>
+        </div>
+
+        <div class="form-group">
+            <%= label_tag "state", "State/Province", class: "control-label" %>
+            <%= text_field_tag "state", nil, placeholder: "State/Province", maxlength: 20, class: "form-control" %>
+        </div>
+
+        <div class="form-group">
+            <%= label_tag "URL", "Website", class: "control-label" %>
+            <%= text_field_tag "URL", nil, placeholder: "http://www.yourwebsite.com", class: "form-control", maxlength: 80 %>
+        </div>
+
+        <div class="form-group">
+            <input type="hidden" name="lead_source" id="lead_source" value="<%= @lead_src %>">
+        </div>
+    </div>
+
+    <% if @modal %>
+        </div>
+    <% end %>
+
+    <% if @modal %>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary" name="commit" type="submit" name="commit">Submit</button>
+        </div>
+    <% end %>
+
+<% end %>
