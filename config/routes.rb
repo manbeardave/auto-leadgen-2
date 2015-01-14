@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   get 'tech/creatives' => 'welcomeone#index'
 
-  get 'tech' => 'tandr#index'
+  get 'tech' => 'TandR#index'
 
   get 'section1' => 'section1#index'  
   get 'section2' => 'section2#index'
