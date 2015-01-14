@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 
   get 'contact/:lead_src' => 'contact#index'
 
-  get 'creatives' => 'welcomeone#index'
+  get 'tech/creatives' => 'welcomeone#index'
 
   get 'tech' => 'tandr#index'
 
