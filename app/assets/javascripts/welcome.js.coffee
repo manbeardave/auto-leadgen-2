@@ -67,6 +67,10 @@ jQuery ->
     sameHeight('selfserve-text', 'selfserve-image')
     sameHeight('testimonial-1-quote', 'testimonial-1-image')
     sameHeight('testimonial-2-quote', 'testimonial-2-image')
+    sameHeight('stateofthemarket-text', 'stateofthemarket-image')
+    sameHeight('stateofthemarket-text', 'stateofthemarket-image')
+
+
     #verticallyCenter('geofencing-row', 'geofencing-text')
     #verticallyCenter('geofencing-row', 'geofencing-image')
 
