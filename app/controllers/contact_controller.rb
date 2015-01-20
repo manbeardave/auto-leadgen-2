@@ -20,6 +20,8 @@
           @industry = nil
           @industry_c = "Automotive"
           @in_c = "Automotive shorthand"
+          @In_c = "Automotive Shorthand capital I"
+          @Industry_c = "dave rules full word capital I"
           @redir = "http://#{Rails.configuration.base_url}/automotive/confirm"
           @lead_src = "Mobile Promo"
         end
