@@ -40,9 +40,14 @@
             <% if @use_dropdown %>
                 <%= label_tag "industry", "How would you describe yourself?", class: "control-label" %>
                 <%= select_tag "industry", options_for_select(@industries), {class: "form-control"} %>
-            <% else %>
-                <%= hidden_field_tag 'industry', @industry %>
+    
             <% end %>
+        </div>
+        
+         <div class="form-group">
+            
+                <%= hidden_field_tag 'industry_category', @industry %>
+    
         </div>
 
         <div class="form-group">

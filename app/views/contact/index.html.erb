@@ -32,7 +32,6 @@
               <%= email_field_tag "email", nil, placeholder: "you@company.com", class: "form-control", maxlength: 80 %>
             </div>
 
-
             <div class="form-group">
               <%= label_tag "company", "Company", class: "control-label" %>
               <%= text_field_tag "company", nil, placeholder: "Company Name", class: "form-control", maxlength: 40 %>
@@ -62,9 +61,11 @@
               <% if @use_dropdown %>
                 <%= label_tag "industry", "Industry", class: "control-label" %>
                 <%= select_tag "industry", options_for_select(@industries), {class: "form-control"} %>
-              <% else %>
-                <%= hidden_field_tag 'industry', @industry %> 
               <% end %>
+            </div>
+            
+            <div class="form-group">
+            <%= hidden_field_tag 'industry_category', @industry_category %> 
             </div>
 
             <div class="form-group">

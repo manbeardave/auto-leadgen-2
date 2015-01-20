@@ -17,9 +17,10 @@
           @redir = "http://#{Rails.configuration.base_url}/advertiser/confirm"
           @lead_src = "Webinar"
         elsif params[:industry] == "automotive"
-          @industry = "Automotive"
+          @industry = nil
+          @industry_category = "Automotive"
           @redir = "http://#{Rails.configuration.base_url}/automotive/confirm"
-          @lead_src = "Webinar"
+          @lead_src = "Mobile Promo"
         end
       elsif params[:lead_src]
         if params[:lead_src] == "verve-outreach"
@@ -30,7 +31,7 @@
       end
     end
     if (@industry == nil)
-      @industries = industry_options
+          @industries = ct_options
     end
     @redir_url = @redir
     @use_dropdown = (@industry == nil)
@@ -56,13 +57,11 @@
   end
 
   private
-  def industry_options
+  def ct_options
     options = ["--None--",
-               "Local Agency",
-               "Local Advertiser",
-               "Local Merchant Platform",
-               "Publisher",
-               "Other"]
+               "Agency",
+               "Advertiser"
+              ]
     return options
   end
 
