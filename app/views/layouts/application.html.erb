@@ -76,9 +76,9 @@
       <%= image_tag "verve_mobile_logo.png", alt: "Verve" %>
     </a>
     <ul class="nav navbar-nav navbar-right">
-            <li class="<%= 'active' if current_page?('/') %>"><a href="../">Home</a></li>
-            <li class="<%= 'active' if current_page?('/tech/') %>"><a href="../tech/">Technology & Resources</a></li>
-            <li class="<%= 'active' if current_page?('tech/creatives') %>"><a href="/tech/creatives">Wall of Creatives</a></li>
+            <li class="<%= 'active' if current_page?("/") %>"><a href="../">Home</a></li>
+            <li class="<%= 'active' if current_page?("/tech") %>"><a href="../tech/">Technology & Resources</a></li>
+            <li class="<%= 'active' if current_page?("/tech/creatives") %>"><a href="/tech/creatives">Wall of Creatives</a></li>
           </ul>
   </div>
 </nav>
