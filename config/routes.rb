@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'confirm' => 'contact#confirm'
   get 'agency/confirm' => 'contact#confirm', webinar: 'true'
   get 'advertiser/confirm' => 'contact#confirm', webinar: 'true'
-  get 'automotive/confirm' => 'contact#automotive_confirm', webinar: 'true'
+  get '/automotive/confirm' => 'contact#automotive_confirm'
 
   get 'contact/:lead_src' => 'contact#index'
 

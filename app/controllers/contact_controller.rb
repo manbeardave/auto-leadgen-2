@@ -18,7 +18,8 @@
           @lead_src = "Webinar"
         elsif params[:industry] == "automotive"
           @industry = nil
-          @industry_category = "Automotive"
+          @industry_c = "Automotive"
+          @in_c = "Automotive shorthand"
           @redir = "http://#{Rails.configuration.base_url}/automotive/confirm"
           @lead_src = "Mobile Promo"
         end
@@ -40,6 +41,7 @@
   end
 
   def automotive_confirm
+    render "automotive_confirm"
   end
 
   def confirm
