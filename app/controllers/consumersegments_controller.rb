@@ -1,4 +1,4 @@
-class ConsumerSegmentsController < ApplicationController
+class ConsumersegmentsController < ApplicationController
   def index
   end
 end
