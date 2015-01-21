@@ -43,7 +43,7 @@
   end
 
   def automotive_confirm
-     redirect_to "/automotive/confirm"
+     render "automotive_confirm"
   end
 
   def confirm
