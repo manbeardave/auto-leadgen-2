@@ -44,7 +44,6 @@
 
   def automotive_confirm
      render layout: 'appcontact'
-     render "automotive_confirm"
   end
 
   def confirm
