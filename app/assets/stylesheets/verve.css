@@ -1,3 +1,60 @@
+#menu-about-us {
+	border: 1px solid rgb(229,229,229);
+	margin-top:50px;
+    margin-bottom:50px;
+    }
+    .vertical-middle.img-responsive.right-block {
+        float:right;
+    }
+.submenu_item {
+      
+      color: #004F7e;
+      display: block;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      font-family: "proxima-nova-condensed",sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      border-bottom: 1px solid #e5e5e5;
+}
+.submenu_item.current_page {
+background-color: #F8CA39;
+}
+menu.genesis-nav-menu {
+   -webkit-font-smoothing: subpixel-antialiased;
+      clear: both;
+      width: 100%;
+      border: 1px solid #e5e5e5;
+      text-align:left;
+}
+
+.submenu_item a {
+         color: #004F7e;
+         display: block;
+         padding: 10px 0px 10px 0px;
+         margin: 0 15px;
+         -webkit-transition: all 0.1s ease-in-out;
+         -moz-transition: all 0.1s ease-in-out;
+         -ms-transition: all 0.1s ease-in-out;
+         -o-transition: all 0.1s ease-in-out;
+         transition: all 0.1s ease-in-out;
+      }
+.submenu_item a:hover {
+   color: #F8CA39 !important;
+   text-decoration:none;
+   
+}
+
+
+
+
+
+
+
+
+
+
 /*
 	Theme Name: Centric Theme
 	Theme URI: http://my.studiopress.com/themes/centric/
