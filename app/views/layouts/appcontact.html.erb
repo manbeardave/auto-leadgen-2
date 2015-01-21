@@ -36,7 +36,7 @@
             <li class="<%= 'active' if current_page?("/") %>"><a href="../">Home</a></li>
             <li class="<%= 'active' if current_page?("/tech") %>"><a href="../tech/">Technology & Resources</a></li>
             <li class="<%= 'active' if current_page?("/tech/creatives") %>"><a href="/tech/creatives">Wall of Creatives</a></li>
-            <li class="<%= 'active' if current_page?("/automotive") || current_page?("/automotive/confirm")  %>"><a href="/automotive">Wall of Creatives</a></li>
+            <li class="<%= 'active' if current_page?("/automotive") || current_page?("/automotive/confirm")  %>"><a href="/automotive">Contact Us</a></li>
           </ul>
   </div>
 </nav>
@@ -49,8 +49,6 @@
 
 <div class="container">
 
-  <div class="bumper">
-  </div>
 
   <%= yield %>
 
