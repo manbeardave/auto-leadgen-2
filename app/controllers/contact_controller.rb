@@ -43,7 +43,7 @@
   end
 
   def automotive_confirm
-     redirect_to "/images/screenshot.jpg"
+     redirect_to "/automotive/confirm"
   end
 
   def confirm
